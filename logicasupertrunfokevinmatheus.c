@@ -15,7 +15,10 @@ int main() { // função principal
     printf("========BEM VINDO AO SUPER TRUNFO=========\n");
 
     int opcao; // variável para armazenar a opção escolhida pelo usuário
+    int atributo;
 
+do
+{
     printf("Escolha uma opção:\n");
     printf("1. Ler as Regras\n");
     printf("2. Casastrar cartas\n");
@@ -136,7 +139,9 @@ int main() { // função principal
 
             break; // interrompe a execução do switch
         case 3:
-        int atributo;
+        do
+        {
+        
             printf("Hora de Jogar!.\n");
             printf("\nEscolha um dos atributos para comparar as duas cartas:\n");
             
@@ -147,6 +152,7 @@ int main() { // função principal
             printf("5. Densidade Demográfica\n");
             printf("6. PIB PerCapita\n");
             printf("7. Super Poder\n");
+            printf("8. Sair\n");
             scanf("%d", &atributo); // lê a opção escolhida pelo usuário
 
             
@@ -248,6 +254,9 @@ int main() { // função principal
                 printf("Opção inválida.\n");
                 break;
             }
+            printf("\n"); // Adiciona uma linha em branco para melhor visualização
+        } while (opcao != 8); // O loop continua enquanto a opção não for 8 (Sair)
+        
             break; // interrompe a execução do switch
         case 4:
             printf("Saindo...\n");
@@ -257,6 +266,8 @@ int main() { // função principal
             break; // interrompe a execução do switch
     }
 
+    printf("\n"); // Adiciona uma linha em branco para melhor visualização
+} while (opcao != 4); // O loop continua enquanto a opção não for 4 (Sair)
 
 
     //mensagem de fim de jogo
