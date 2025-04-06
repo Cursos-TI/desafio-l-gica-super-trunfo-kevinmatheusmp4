@@ -1,28 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-//declarando variáveis CARTA 1
-    char estado1[50];
-    char cidade1[50];
-    char codigodacarta1[50];
-    int populacao1;
-    int PontosTuristicos1;
-    float area1;
-    float PIB1;
-    double PIBpercapta1;
-    double DensidadePopulacional1;
+/*
+// Definindo a codificação UTF-8 para o console do Windows
+// Isso é necessário para garantir que os caracteres acentuados sejam exibidos corretamente no console do Windows.
 
-//declarando variáveis CARTA 2
-    char estado2[50];
-    char cidade2[50];
-    char codigodacarta2[50];
-    int populacao2;
-    int PontosTuristicos2;
-    float area2;
-    float PIB2;
-    double PIBpercapta2;
-    double DensidadePopulacional2;
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+chcp 65001
 
+*/
 
 int main() { // função principal
 
@@ -36,6 +22,8 @@ int main() { // função principal
     printf("3. Vamos jogar!\n");
     printf("4. Sair\n");
     scanf("%d", &opcao); // lê a opção escolhida pelo usuário
+    while (getchar() != '\n');
+
 
     switch (opcao) { // avalia a opção escolhida
         case 1: 
@@ -44,6 +32,27 @@ int main() { // função principal
         case 2:
             printf("VAMOS CADASTRAR AS CARTAS!\n");
                 // Dados da carta 1
+                //declarando variáveis CARTA 1
+                    char estado1[50];
+                    char cidade1[50];
+                    char codigodacarta1[50];
+                    int populacao1;
+                    int PontosTuristicos1;
+                    float area1;
+                    float PIB1;
+                    double PIBpercapta1;
+                    double DensidadePopulacional1;
+
+                //declarando variáveis CARTA 2
+                    char estado2[50];
+                    char cidade2[50];
+                    char codigodacarta2[50];
+                    int populacao2;
+                    int PontosTuristicos2;
+                    float area2;
+                    float PIB2;
+                    double PIBpercapta2;
+                    double DensidadePopulacional2;
 
             printf("========Vamos cadastrar os dados da Carta 1=========\n");
 
